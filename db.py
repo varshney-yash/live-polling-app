@@ -10,6 +10,7 @@ import os
 username = os.environ.get('mongo_username')
 passw = os.environ.get('mongo_password')
 
+print(username,passw)
 
 username = urllib.parse.quote_plus(username)
 passw = urllib.parse.quote_plus(passw)
