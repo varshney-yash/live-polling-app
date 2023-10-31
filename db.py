@@ -13,10 +13,10 @@ passw = os.environ.get('mongo_password')
 print(username,passw)
 
 username = urllib.parse.quote_plus(str(username))
-passw = urllib.parse.quote_plusstr((passw))
+passw = urllib.parse.quote_plus(str(passw))
 
 uri = f"mongodb+srv://{username}:{passw}@cluster0.wvqfpmi.mongodb.net/?retryWrites=true&w=majority"
-
+print(uri)
 client = MongoClient(uri, server_api=ServerApi('1'))
 
 try:
