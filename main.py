@@ -72,3 +72,7 @@ async def get_poll(poll_slug: str,request:Request):
 @app.get("/", response_class=HTMLResponse)
 async def get_homepage(request:Request):
     return templates.TemplateResponse("index.html",{"request":request})
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
