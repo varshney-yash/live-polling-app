@@ -1,5 +1,7 @@
 {
-    "version": 2,
+    "projectSettings": {
+      "framework": "python"
+    },
     "builds": [
       { "src": "main.py", "use": "@vercel/python" }
     ],
