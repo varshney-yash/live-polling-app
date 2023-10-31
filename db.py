@@ -7,8 +7,8 @@ load_dotenv()
 
 import os 
 
-username = os.environ.get('mongo-username')
-passw = os.environ.get('mongo-password')
+username = os.environ.get('mongo_username')
+passw = os.environ.get('mongo_password')
 
 
 username = urllib.parse.quote_plus(username)
