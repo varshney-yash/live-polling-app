@@ -18,7 +18,7 @@ passw = urllib.parse.quote_plus(str(passw))
 uri = f"mongodb+srv://{username}:{passw}@cluster0.wvqfpmi.mongodb.net/?retryWrites=true&w=majority"
 print(uri)
 client = MongoClient(uri, server_api=ServerApi('1'))
-
+print('\nhereeeeeee')
 try:
     client.admin.command('ping')
     print("Pinged your deployment. You successfully connected to MongoDB!")
